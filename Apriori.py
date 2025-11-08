@@ -50,6 +50,9 @@ def initial(transactions, min_sup):
         return itemsets, postinglist
 
 # ----------------- gen_next_nodes -----------------------
+# This function is based on the Efficient-Apriori project:
+# https://github.com/tommyod/Efficient-Apriori
+# Original MIT License applies.
 def gen_candidates(k_itemset):
     
     n = len(k_itemset) # length Frequent Itemset

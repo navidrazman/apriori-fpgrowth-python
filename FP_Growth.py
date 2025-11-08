@@ -163,6 +163,9 @@ def diff(a, b): # diff that preserve order !
     return tuple([i for i in a if i not in sb])
 
 # ----------------- generate next rules -----------------------
+# This function is based on the Efficient-Apriori project:
+# https://github.com/tommyod/Efficient-Apriori
+# Original MIT License applies.
 def gen_candidates(k_itemset):
     
     n = len(k_itemset) # length Frequent Itemset
