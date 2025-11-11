@@ -219,7 +219,7 @@ def rules_my_fpgrowth(freq_itemset ,min_conf=0):
         
         c = count(item_list)
         
-#         yield (S, tuple(), c) # if u dont want have rules that Y is empty
+        # yield (S, tuple(), c) # uncomment if you want rules that Y is empty (this rules have 100% confidence)
     
         # ----- generate first rules
         y_list = []

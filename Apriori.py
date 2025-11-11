@@ -22,7 +22,7 @@ def initial(transactions, min_sup):
             
                 else: # --- if we never created an item
                 
-                    pl = set([t_id]) # pl : posting list
+                    pl = set([t_id]) # pl : posting list for fast counting 
                     
                     temp[item] = pl
                     
@@ -168,7 +168,7 @@ def rules_my_apriori(freq_itemsets ,min_conf):
 
             c = count(item_list)
 
-    #         yield (S, tuple(), c) # if u dont want have rules that Y is empty
+            # yield (S, tuple(), c) # uncomment if you want rules that Y is empty (this rules have 100% confidence)
 
             # ----- generate first rules
             y_list = []
