@@ -31,7 +31,8 @@ These algorithms are commonly used in market basket analysis, recommendation sys
 
 ## 🧪 **How to Run**
 ### Option 1 — Run on Google Colab
-Click the badge below to open the notebook in Colab and run it interactively:
+Click the badge below to open the notebook in Colab and run it interactively.<p>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/navidrazman/apriori-fpgrowth-python/blob/main/notebooks/Association_Rules_demo.ipynb)
 
 ### Option 2 — Run locally
 1. Clone this repository:
