@@ -1,8 +1,10 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/navidrazman/apriori-fpgrowth-python)
+
 # Data Mining Project: Apriori and FP-Growth Implementation
 
 This repository contains an academic project developed as part of a Bachelor's-level **Data Mining** course.  
 The project implements two classical association rule mining algorithms — **Apriori** and **FP-Growth** — using **pure Python** without external data mining libraries. 
-
 ---
 
 ## 🎯 **Project Overview**
