@@ -166,6 +166,8 @@ def diff(a, b): # diff that preserve order !
 # This function is based on the Efficient-Apriori project:
 # https://github.com/tommyod/Efficient-Apriori
 # Original MIT License applies.
+# Original idea © Tommy Odhiambo.
+# Modified implementation © Navid Razman.
 def gen_candidates(k_itemset):
     
     n = len(k_itemset) # length Frequent Itemset
@@ -219,7 +221,7 @@ def rules_my_fpgrowth(freq_itemset ,min_conf=0):
         
         c = count(item_list)
         
-        # yield (S, tuple(), c) # uncomment if you want rules that Y is empty (this rules have 100% confidence)
+#         yield (S, tuple(), c) # if u dont want have rules that Y is empty
     
         # ----- generate first rules
         y_list = []

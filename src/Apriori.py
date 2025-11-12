@@ -22,7 +22,7 @@ def initial(transactions, min_sup):
             
                 else: # --- if we never created an item
                 
-                    pl = set([t_id]) # pl : posting list for fast counting 
+                    pl = set([t_id]) # pl : posting list
                     
                     temp[item] = pl
                     
@@ -53,8 +53,9 @@ def initial(transactions, min_sup):
 # This function is based on the Efficient-Apriori project:
 # https://github.com/tommyod/Efficient-Apriori
 # Original MIT License applies.
+# Original idea © Tommy Odhiambo.
+# Modified implementation © Navid Razman.
 def gen_candidates(k_itemset):
-    
     n = len(k_itemset) # length Frequent Itemset
     i = 0
     
@@ -168,7 +169,7 @@ def rules_my_apriori(freq_itemsets ,min_conf):
 
             c = count(item_list)
 
-            # yield (S, tuple(), c) # uncomment if you want rules that Y is empty (this rules have 100% confidence)
+    #         yield (S, tuple(), c) # if u dont want have rules that Y is empty
 
             # ----- generate first rules
             y_list = []
